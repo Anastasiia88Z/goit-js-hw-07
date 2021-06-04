@@ -3,4 +3,4 @@ console.log(navEl);
 
 
 const navTitle = document.querySelector("#categories");
-console.log(navTitle);
+console.log(navTitle.querySelectorAll("#item"));

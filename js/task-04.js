@@ -21,3 +21,7 @@ const decrement = () => {
 
 refs.sub.addEventListener("click", increment);
 refs.add.addEventListener("click", decrement);
+
+ console.log(increment);
+ console.log(decrement);
+ console.log(refs);

@@ -1,6 +1,9 @@
 const navEl = document.querySelectorAll(".item");
-console.log(navEl);
+console.log(`В списке ${navEl.length} категории.`);
 
 
-const navTitle = document.querySelector("#categories");
-console.log(navTitle.querySelectorAll("#item"));
+navEl.forEach((element) => {
+
+  console.log(`Категория: ${element.firstElementChild.textContent}`);
+  console.log(`Количество элементов:${element.querySelectorAll("li").length}`)
+});

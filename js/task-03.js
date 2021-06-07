@@ -13,21 +13,21 @@ const images = [
   },
 ];
 
+const pictures = images.map(
+  ({url, alt}) =>
+  `<li><img src="${url}" alt="${alt}" width = 240> </li>`)
+  .join("");
 
 
 const imageEl = document.querySelector('#gallery');
 
-const imagenAnimalEl = images.map(image => {
-const itemEl = document.createElement('li');
 
-  itemEl.insertAdjacentHTML('afterbegin', `<img src = '${image.url}' alt = '${image.alt}' />`);
-  return itemEl;
-});
-
-imageEl.append(...imagenAnimalEl);
+  imageEl.insertAdjacentHTML('afterbegin', pictures);
 
 
-console.log(imageEl);
+
+
+
 
 
 
